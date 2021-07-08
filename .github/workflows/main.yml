@@ -34,5 +34,12 @@ jobs:
         if: ${{ success() }}
         run: |
           ./hello
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: hello-x86-v0.1
+          path: |
+            hello
+
           
           
