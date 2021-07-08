@@ -28,11 +28,11 @@ jobs:
       # Runs a single command using the runners shell
       - name: build
         run: |
-          gcc -o0 main.c -o main
+          gcc -o0 hello.c -o hello
       # Runs a set of commands using the runners shell
       - name: Run
         if: ${{ success() }}
         run: |
-          ./main
+          ./hello
           
           
